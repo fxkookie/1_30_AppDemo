@@ -13,6 +13,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let userDefaults = UserDefaults.standard
+        var isLogined = userDefaults.value(forKey: "isLogined") as? Bool
+        
+        if isLogined != nil && isLogined! {
+            print("***")
+        }
+        else{
+            print("******")
+            var loginVC = self.storyboard?.instantiateViewController(withIdentifier: "loginVC")
+            present(loginVC!,animated: true,completion: nil)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +31,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
 
 }
 

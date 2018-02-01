@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,8 +15,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+//         Override point for customization after application launch.
+//        var abc:UITabBarController =  window?.rootViewController as! UITabBarController
+        
+//        abc.tabBar.items![0].title = "加入事件"
+//        abc.tabBar.items![1].title = "創立事件"
+//        abc.tabBar.items![2].title = "提醒"
+//        abc.tabBar.items![3].title = "個人資訊"
+         FirebaseApp.configure()
+        print("test")
         return true
     }
 
