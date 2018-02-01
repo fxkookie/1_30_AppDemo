@@ -17,8 +17,10 @@ class first: UIViewController {
         
         if isLogined != nil && isLogined! {
             print("123")
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            //show window
             var goVC = self.storyboard?.instantiateViewController(withIdentifier: "home")
-            self.present(goVC!,animated: true,completion: nil)
+            appDelegate.window?.rootViewController = goVC
         }
         else{
             print("456")
