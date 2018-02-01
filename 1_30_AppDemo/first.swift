@@ -23,7 +23,9 @@ class first: UIViewController {
         else{
             print("456")
             var login2VC = self.storyboard?.instantiateViewController(withIdentifier: "loginVC")
-            self.present(login2VC!,animated: true,completion: nil)
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            //show window
+            appDelegate.window?.rootViewController = login2VC
         }
         // Do any additional setup after loading the view.
     }

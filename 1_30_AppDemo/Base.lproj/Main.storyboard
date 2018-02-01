@@ -239,10 +239,10 @@
             </objects>
             <point key="canvasLocation" x="-2145" y="-985"/>
         </scene>
-        <!--View Controller-->
+        <!--First-->
         <scene sceneID="nGd-o1-e8v">
             <objects>
-                <viewController id="28V-AH-4Tv" customClass="ViewController" customModule="__30_AppDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="28V-AH-4Tv" customClass="first" customModule="__30_AppDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N4D-IS-EgB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
